@@ -1,2 +1,1 @@
-include ':mupdf'
-include ':mupdfSample'
+include ':mupdf', ':ebook', ':mupdfSample'
