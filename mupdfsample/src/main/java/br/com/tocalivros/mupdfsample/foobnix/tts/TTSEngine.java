@@ -7,17 +7,6 @@ import android.speech.tts.TextToSpeech.EngineInfo;
 import android.speech.tts.TextToSpeech.OnInitListener;
 import android.speech.tts.TextToSpeech.OnUtteranceCompletedListener;
 import android.widget.Toast;
-
-import br.com.tocalivros.mupdfsample.foobnix.android.utils.LOG;
-import br.com.tocalivros.mupdfsample.foobnix.android.utils.ResultResponse;
-import br.com.tocalivros.mupdfsample.foobnix.android.utils.TxtUtils;
-import br.com.tocalivros.mupdfsample.foobnix.ext.CacheZipUtils;
-import br.com.tocalivros.mupdfsample.foobnix.pdf.info.wrapper.AppState;
-import br.com.tocalivros.mupdfsample.foobnix.pdf.info.wrapper.DocumentController;
-import br.com.tocalivros.mupdfsample.R;
-import br.com.tocalivros.mupdfsample.foobnix.sys.TempHolder;
-
-import org.ebookdroid.LibreraApp;
 import org.greenrobot.eventbus.EventBus;
 
 import java.io.File;
@@ -25,6 +14,16 @@ import java.io.FileFilter;
 import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.List;
+
+import br.com.tocalivros.mupdfsample.R;
+import br.com.tocalivros.mupdfsample.application.MuPDFApplication;
+import br.com.tocalivros.mupdfsample.foobnix.android.utils.LOG;
+import br.com.tocalivros.mupdfsample.foobnix.android.utils.ResultResponse;
+import br.com.tocalivros.mupdfsample.foobnix.android.utils.TxtUtils;
+import br.com.tocalivros.mupdfsample.foobnix.ext.CacheZipUtils;
+import br.com.tocalivros.mupdfsample.foobnix.pdf.info.wrapper.AppState;
+import br.com.tocalivros.mupdfsample.foobnix.pdf.info.wrapper.DocumentController;
+import br.com.tocalivros.mupdfsample.foobnix.sys.TempHolder;
 
 public class TTSEngine {
 
@@ -40,6 +39,7 @@ public class TTSEngine {
     }
 
     HashMap<String, String> map = new HashMap<String, String>();
+
     {
         map.put(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, UTTERANCE_ID);
     }
@@ -58,7 +58,7 @@ public class TTSEngine {
         public void onInit(int status) {
             LOG.d(TAG, "onInit", "SUCCESS", status == TextToSpeech.SUCCESS);
             if (status == TextToSpeech.ERROR) {
-                Toast.makeText(LibreraApp.context, R.string.msg_unexpected_error, Toast.LENGTH_LONG).show();
+                Toast.makeText(MuPDFApplication.context, R.string.msg_unexpected_error, Toast.LENGTH_LONG).show();
             }
 
         }
@@ -76,7 +76,7 @@ public class TTSEngine {
             onLisnter = listener;
         }
 
-        ttsEngine = new TextToSpeech(LibreraApp.context, onLisnter);
+        ttsEngine = new TextToSpeech(MuPDFApplication.context, onLisnter);
 
         return ttsEngine;
 
@@ -98,7 +98,7 @@ public class TTSEngine {
 
     public TextToSpeech setTTSWithEngine(String engine) {
         shutdown();
-        ttsEngine = new TextToSpeech(LibreraApp.context, listener, engine);
+        ttsEngine = new TextToSpeech(MuPDFApplication.context, listener, engine);
         return ttsEngine;
     }
 

@@ -7,7 +7,6 @@ import android.view.MotionEvent;
 import android.widget.Toast;
 
 import org.ebookdroid.BookType;
-import org.ebookdroid.LibreraApp;
 import org.ebookdroid.common.settings.SettingsManager;
 import org.ebookdroid.common.touch.IGestureDetector;
 import org.ebookdroid.common.touch.IMultiTouchListener;
@@ -16,6 +15,7 @@ import org.ebookdroid.core.AbstractViewController;
 import org.ebookdroid.core.codec.Annotation;
 
 import br.com.tocalivros.mupdfsample.R;
+import br.com.tocalivros.mupdfsample.application.MuPDFApplication;
 import br.com.tocalivros.mupdfsample.foobnix.android.utils.Dips;
 import br.com.tocalivros.mupdfsample.foobnix.android.utils.LOG;
 import br.com.tocalivros.mupdfsample.foobnix.android.utils.TxtUtils;
@@ -288,7 +288,7 @@ public class AdvGuestureDetector extends SimpleOnGestureListener implements IMul
     public void onLongPress(final MotionEvent e) {
         Vibro.vibrate();
         if (!AppState.get().longTapEnable || AppState.get().isCut || AppState.get().isCrop) {
-            Toast.makeText(LibreraApp.context, R.string.the_page_is_clipped_the_text_selection_does_not_work, Toast.LENGTH_LONG).show();
+            Toast.makeText(MuPDFApplication.context, R.string.the_page_is_clipped_the_text_selection_does_not_work, Toast.LENGTH_LONG).show();
             return;
         }
 

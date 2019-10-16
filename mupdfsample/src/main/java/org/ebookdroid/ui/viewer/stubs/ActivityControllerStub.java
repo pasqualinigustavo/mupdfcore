@@ -1,6 +1,8 @@
 package org.ebookdroid.ui.viewer.stubs;
 
-import org.ebookdroid.LibreraApp;
+import android.app.Activity;
+import android.content.Context;
+
 import org.ebookdroid.core.DecodeService;
 import org.ebookdroid.core.ViewState;
 import org.ebookdroid.core.models.DecodingProgressModel;
@@ -10,13 +12,10 @@ import org.ebookdroid.ui.viewer.IActivityController;
 import org.ebookdroid.ui.viewer.IView;
 import org.ebookdroid.ui.viewer.IViewController;
 import org.ebookdroid.ui.viewer.VerticalViewActivity;
-
-import android.app.Activity;
-import android.content.Context;
-
 import org.emdev.ui.actions.ActionController;
 import org.emdev.ui.actions.IActionController;
 
+import br.com.tocalivros.mupdfsample.application.MuPDFApplication;
 import br.com.tocalivros.mupdfsample.foobnix.sys.VerticalModeController;
 
 public class ActivityControllerStub extends ActionController<VerticalViewActivity> implements IActivityController {
@@ -34,7 +33,7 @@ public class ActivityControllerStub extends ActionController<VerticalViewActivit
 
     @Override
     public Context getContext() {
-        return LibreraApp.context;
+        return MuPDFApplication.context;
     }
 
     @Override

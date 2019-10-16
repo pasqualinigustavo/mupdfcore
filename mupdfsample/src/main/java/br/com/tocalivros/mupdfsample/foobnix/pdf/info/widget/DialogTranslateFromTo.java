@@ -15,24 +15,24 @@ import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import br.com.tocalivros.mupdfsample.foobnix.android.utils.BaseItemLayoutAdapter;
-import br.com.tocalivros.mupdfsample.foobnix.android.utils.TxtUtils;
-import br.com.tocalivros.mupdfsample.foobnix.android.utils.Views;
-import br.com.tocalivros.mupdfsample.foobnix.pdf.info.DictsHelper;
-import br.com.tocalivros.mupdfsample.foobnix.pdf.info.DictsHelper.DictItem;
-import br.com.tocalivros.mupdfsample.foobnix.pdf.info.wrapper.AppState;
-import br.com.tocalivros.mupdfsample.R;
-
-import org.ebookdroid.LibreraApp;
-
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
+import br.com.tocalivros.mupdfsample.R;
+import br.com.tocalivros.mupdfsample.application.MuPDFApplication;
+import br.com.tocalivros.mupdfsample.foobnix.android.utils.BaseItemLayoutAdapter;
+import br.com.tocalivros.mupdfsample.foobnix.android.utils.TxtUtils;
+import br.com.tocalivros.mupdfsample.foobnix.android.utils.Views;
+import br.com.tocalivros.mupdfsample.foobnix.pdf.info.DictsHelper;
+import br.com.tocalivros.mupdfsample.foobnix.pdf.info.DictsHelper.DictItem;
+import br.com.tocalivros.mupdfsample.foobnix.pdf.info.wrapper.AppState;
+
 public class DialogTranslateFromTo {
     static Map<String, String> langs = new LinkedHashMap<String, String>();
+
     static {
         langs.put("Afrikaans", "af");
         langs.put("Albanian", "sq");
@@ -128,11 +128,11 @@ public class DialogTranslateFromTo {
     }
 
     public static String getLanuageByCode(String code) {
-        if (LibreraApp.context == null) {
+        if (MuPDFApplication.context == null) {
             return "";
         }
         if (AppState.MY_SYSTEM_LANG.equals(code)) {
-            return LibreraApp.context.getString(R.string.system_language);
+            return MuPDFApplication.context.getString(R.string.system_language);
         }
         try {
             Locale l = new Locale(code);

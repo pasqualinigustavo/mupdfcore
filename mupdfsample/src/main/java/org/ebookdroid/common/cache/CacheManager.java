@@ -1,5 +1,14 @@
 package org.ebookdroid.common.cache;
 
+import android.app.Activity;
+import android.content.Context;
+import android.database.Cursor;
+import android.net.Uri;
+import android.provider.OpenableColumns;
+
+import org.ebookdroid.BookType;
+import org.emdev.utils.StringUtils;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -10,19 +19,10 @@ import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
 import java.nio.channels.WritableByteChannel;
 
-import org.ebookdroid.BookType;
-import org.ebookdroid.LibreraApp;
-import org.emdev.utils.StringUtils;
-
+import br.com.tocalivros.mupdfsample.application.MuPDFApplication;
 import br.com.tocalivros.mupdfsample.foobnix.android.utils.LOG;
 import br.com.tocalivros.mupdfsample.foobnix.pdf.info.ExtUtils;
 import br.com.tocalivros.mupdfsample.foobnix.pdf.info.wrapper.AppState;
-
-import android.app.Activity;
-import android.content.Context;
-import android.database.Cursor;
-import android.net.Uri;
-import android.provider.OpenableColumns;
 
 public class CacheManager {
     private static Context s_context;
@@ -60,7 +60,7 @@ public class CacheManager {
         if (uri.getScheme().equals("content")) {
             Cursor cursor = null;
             try {
-                cursor = LibreraApp.context.getContentResolver().query(uri, new String[] { OpenableColumns.DISPLAY_NAME }, null, null, null);
+                cursor = MuPDFApplication.context.getContentResolver().query(uri, new String[]{OpenableColumns.DISPLAY_NAME}, null, null, null);
                 if (cursor.moveToFirst()) {
                     result = cursor.getString(cursor.getColumnIndex(OpenableColumns.DISPLAY_NAME));
                 }

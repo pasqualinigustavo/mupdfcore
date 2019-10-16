@@ -16,9 +16,9 @@
         android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/StyledIndicatorsWhite">
+        android:theme="@style/AppTheme">
 
-        <activity android:name=".activities.main.MainActivity">
+        <activity android:name=".activities.main.MainActivity2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

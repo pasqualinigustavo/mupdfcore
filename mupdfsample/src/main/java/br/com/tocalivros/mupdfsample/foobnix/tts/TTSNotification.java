@@ -10,12 +10,12 @@ import android.net.Uri;
 
 import androidx.core.app.NotificationCompat;
 
-import org.ebookdroid.LibreraApp;
 import org.ebookdroid.ui.viewer.VerticalViewActivity;
 
 import java.io.File;
 
 import br.com.tocalivros.mupdfsample.R;
+import br.com.tocalivros.mupdfsample.application.MuPDFApplication;
 import br.com.tocalivros.mupdfsample.foobnix.android.utils.LOG;
 import br.com.tocalivros.mupdfsample.foobnix.dao2.FileMeta;
 import br.com.tocalivros.mupdfsample.foobnix.pdf.info.IMG;
@@ -39,7 +39,7 @@ public class TTSNotification {
     static int page1;
 
     public static void show(String bookPath, int page) {
-        Context c = LibreraApp.context;
+        Context c = MuPDFApplication.context;
         bookPath1 = bookPath;
         page1 = page;
         try {
@@ -83,7 +83,7 @@ public class TTSNotification {
     }
 
     public static void hideNotification() {
-        NotificationManager nm = (NotificationManager) LibreraApp.context.getSystemService(Context.NOTIFICATION_SERVICE);
+        NotificationManager nm = (NotificationManager) MuPDFApplication.context.getSystemService(Context.NOTIFICATION_SERVICE);
         nm.cancel(NOT_ID);
     }
 

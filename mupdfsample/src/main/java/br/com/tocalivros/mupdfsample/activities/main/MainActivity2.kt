@@ -9,13 +9,14 @@ import java.io.FileOutputStream
 import java.io.IOException
 import java.io.InputStream
 
-class MainActivity : AppCompatActivity() {
+class MainActivity2 : AppCompatActivity() {
 
     private val DATABASE_NAME = "livro2.epub"
     private val DATABASE_PATH = "/data/data/" + BuildConfig.APPLICATION_ID + "/databases/"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         copyDBFromAssetsFolder()
         val f = File("$DATABASE_PATH/$DATABASE_NAME")
         ExtUtils.showDocument(this, f, 0)

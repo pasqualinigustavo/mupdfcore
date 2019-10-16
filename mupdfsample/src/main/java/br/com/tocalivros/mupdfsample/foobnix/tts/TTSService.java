@@ -18,20 +18,20 @@ import android.view.KeyEvent;
 
 import androidx.media.session.MediaButtonReceiver;
 
+import org.ebookdroid.common.settings.SettingsManager;
+import org.ebookdroid.common.settings.books.BookSettings;
+import org.ebookdroid.core.codec.CodecDocument;
+import org.ebookdroid.core.codec.CodecPage;
+import org.greenrobot.eventbus.EventBus;
+
 import br.com.tocalivros.mupdfsample.R;
+import br.com.tocalivros.mupdfsample.application.MuPDFApplication;
 import br.com.tocalivros.mupdfsample.foobnix.android.utils.LOG;
 import br.com.tocalivros.mupdfsample.foobnix.android.utils.TxtUtils;
 import br.com.tocalivros.mupdfsample.foobnix.android.utils.Vibro;
 import br.com.tocalivros.mupdfsample.foobnix.pdf.info.wrapper.AppState;
 import br.com.tocalivros.mupdfsample.foobnix.sys.ImageExtractor;
 import br.com.tocalivros.mupdfsample.foobnix.sys.TempHolder;
-
-import org.ebookdroid.LibreraApp;
-import org.ebookdroid.common.settings.SettingsManager;
-import org.ebookdroid.common.settings.books.BookSettings;
-import org.ebookdroid.core.codec.CodecDocument;
-import org.ebookdroid.core.codec.CodecPage;
-import org.greenrobot.eventbus.EventBus;
 
 public class TTSService extends Service {
 
@@ -135,12 +135,12 @@ public class TTSService extends Service {
 
         Intent intent = playBookIntent(page, path, anchor);
 
-        LibreraApp.context.startService(intent);
+        MuPDFApplication.context.startService(intent);
 
     }
 
     private static Intent playBookIntent(int page, String path, String anchor) {
-        Intent intent = new Intent(LibreraApp.context, TTSService.class);
+        Intent intent = new Intent(MuPDFApplication.context, TTSService.class);
         intent.setAction(TTSService.ACTION_PLAY_CURRENT_PAGE);
         intent.putExtra(EXTRA_INT, page);
         intent.putExtra(EXTRA_PATH, path);
@@ -257,7 +257,7 @@ public class TTSService extends Service {
                 } catch (InterruptedException e) {
                 }
                 TTSEngine.get().getTTS().setOnUtteranceCompletedListener(null);
-                TTSEngine.get().speek(LibreraApp.context.getString(R.string.the_book_is_over));
+                TTSEngine.get().speek(MuPDFApplication.context.getString(R.string.the_book_is_over));
 
                 EventBus.getDefault().post(new TtsStatus());
                 return;

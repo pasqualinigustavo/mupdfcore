@@ -16,18 +16,17 @@ import android.widget.TextView;
 
 import androidx.core.graphics.ColorUtils;
 
-import br.com.tocalivros.mupdfsample.foobnix.android.utils.Dips;
-import br.com.tocalivros.mupdfsample.foobnix.android.utils.LOG;
-import br.com.tocalivros.mupdfsample.foobnix.android.utils.TxtUtils;
-import br.com.tocalivros.mupdfsample.foobnix.pdf.info.IMG;
-
-import org.ebookdroid.LibreraApp;
-
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+
+import br.com.tocalivros.mupdfsample.application.MuPDFApplication;
+import br.com.tocalivros.mupdfsample.foobnix.android.utils.Dips;
+import br.com.tocalivros.mupdfsample.foobnix.android.utils.LOG;
+import br.com.tocalivros.mupdfsample.foobnix.android.utils.TxtUtils;
+import br.com.tocalivros.mupdfsample.foobnix.pdf.info.IMG;
 
 public class MagicHelper {
 
@@ -255,7 +254,7 @@ public class MagicHelper {
             return BitmapFactory.decodeFile(name, opt);
         }
         try {
-            InputStream oldBook = LibreraApp.context.getAssets().open(name);
+            InputStream oldBook = MuPDFApplication.context.getAssets().open(name);
             Bitmap decodeStream = BitmapFactory.decodeStream(oldBook);
             Bitmap res = decodeStream.copy(Config.RGB_565, false);
             decodeStream.recycle();
@@ -392,6 +391,7 @@ public class MagicHelper {
     public static final int addB = Color.blue(myColorIng);
 
     public static float[] myColorHSL = new float[3];
+
     static {
         ColorUtils.colorToHSL(myColorIng, myColorHSL);
     }
@@ -810,7 +810,7 @@ public class MagicHelper {
                     lum = 255;
                 }
                 brightnessContrastMap[i] = (lum << 16) + (lum << 8) + lum; // compose
-                                                                           // greyscale
+                // greyscale
             }
             simpleHash = hash;
         }

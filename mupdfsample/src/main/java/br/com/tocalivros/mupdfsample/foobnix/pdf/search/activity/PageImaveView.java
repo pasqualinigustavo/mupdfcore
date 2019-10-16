@@ -20,6 +20,15 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.Scroller;
 import android.widget.Toast;
 
+import org.ebookdroid.core.codec.PageLink;
+import org.ebookdroid.droids.mupdf.codec.TextWord;
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+
+import java.util.List;
+
+import br.com.tocalivros.mupdfsample.R;
+import br.com.tocalivros.mupdfsample.application.MuPDFApplication;
 import br.com.tocalivros.mupdfsample.foobnix.android.utils.Apps;
 import br.com.tocalivros.mupdfsample.foobnix.android.utils.Dips;
 import br.com.tocalivros.mupdfsample.foobnix.android.utils.LOG;
@@ -28,21 +37,12 @@ import br.com.tocalivros.mupdfsample.foobnix.android.utils.Vibro;
 import br.com.tocalivros.mupdfsample.foobnix.pdf.info.view.BrightnessHelper;
 import br.com.tocalivros.mupdfsample.foobnix.pdf.info.wrapper.AppState;
 import br.com.tocalivros.mupdfsample.foobnix.pdf.info.wrapper.MagicHelper;
-import br.com.tocalivros.mupdfsample.R;
 import br.com.tocalivros.mupdfsample.foobnix.pdf.search.activity.msg.InvalidateMessage;
 import br.com.tocalivros.mupdfsample.foobnix.pdf.search.activity.msg.MessageAutoFit;
 import br.com.tocalivros.mupdfsample.foobnix.pdf.search.activity.msg.MessageEvent;
 import br.com.tocalivros.mupdfsample.foobnix.pdf.search.activity.msg.MovePageAction;
 import br.com.tocalivros.mupdfsample.foobnix.sys.ClickUtils;
 import br.com.tocalivros.mupdfsample.foobnix.sys.TempHolder;
-
-import org.ebookdroid.LibreraApp;
-import org.ebookdroid.core.codec.PageLink;
-import org.ebookdroid.droids.mupdf.codec.TextWord;
-import org.greenrobot.eventbus.EventBus;
-import org.greenrobot.eventbus.Subscribe;
-
-import java.util.List;
 
 public class PageImaveView extends View {
 
@@ -258,7 +258,9 @@ public class PageImaveView extends View {
             }
 
             return true;
-        };
+        }
+
+        ;
 
         @Override
         public boolean onFling(final MotionEvent e1, final MotionEvent e2, final float velocityX, final float velocityY) {
@@ -284,7 +286,7 @@ public class PageImaveView extends View {
             isIgronerClick = true;
             Vibro.vibrate();
             if (!AppState.get().longTapEnable || AppState.get().isCut || AppState.get().isCrop) {
-                Toast.makeText(LibreraApp.context, R.string.the_page_is_clipped_the_text_selection_does_not_work, Toast.LENGTH_LONG).show();
+                Toast.makeText(MuPDFApplication.context, R.string.the_page_is_clipped_the_text_selection_does_not_work, Toast.LENGTH_LONG).show();
                 return;
             }
             isLognPress = true;
@@ -445,11 +447,15 @@ public class PageImaveView extends View {
             return true;
         }
 
-    };
+    }
+
+    ;
 
     public void invalidateAndMsg() {
         EventBus.getDefault().post(new InvalidateMessage());
-    };
+    }
+
+    ;
 
     Runnable scrolling = new Runnable() {
 
@@ -499,12 +505,14 @@ public class PageImaveView extends View {
     }
 
     static Paint rect = new Paint();
+
     static {
         rect.setColor(Color.DKGRAY);
         rect.setStrokeWidth(Dips.dpToPx(1));
         rect.setStyle(Style.STROKE);
 
     }
+
     int dp1 = Dips.dpToPx(1);
 
     @Override

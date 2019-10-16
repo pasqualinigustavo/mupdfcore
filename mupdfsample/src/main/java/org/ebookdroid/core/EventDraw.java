@@ -1,17 +1,5 @@
 package org.ebookdroid.core;
 
-import java.util.Queue;
-
-import org.ebookdroid.LibreraApp;
-import org.ebookdroid.core.codec.PageLink;
-import org.ebookdroid.ui.viewer.IActivityController;
-import org.emdev.utils.LengthUtils;
-
-import br.com.tocalivros.mupdfsample.foobnix.android.utils.Dips;
-import br.com.tocalivros.mupdfsample.R;
-import br.com.tocalivros.mupdfsample.foobnix.pdf.info.wrapper.AppState;
-import br.com.tocalivros.mupdfsample.foobnix.pdf.info.wrapper.MagicHelper;
-
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -20,6 +8,18 @@ import android.graphics.Paint;
 import android.graphics.Paint.Style;
 import android.graphics.RectF;
 import android.text.TextPaint;
+
+import org.ebookdroid.core.codec.PageLink;
+import org.ebookdroid.ui.viewer.IActivityController;
+import org.emdev.utils.LengthUtils;
+
+import java.util.Queue;
+
+import br.com.tocalivros.mupdfsample.R;
+import br.com.tocalivros.mupdfsample.application.MuPDFApplication;
+import br.com.tocalivros.mupdfsample.foobnix.android.utils.Dips;
+import br.com.tocalivros.mupdfsample.foobnix.pdf.info.wrapper.AppState;
+import br.com.tocalivros.mupdfsample.foobnix.pdf.info.wrapper.MagicHelper;
 
 public class EventDraw implements IEvent {
 
@@ -81,12 +81,14 @@ public class EventDraw implements IEvent {
     }
 
     static Paint rect = new Paint();
+
     static {
         rect.setColor(Color.DKGRAY);
         rect.setStrokeWidth(Dips.dpToPx(1));
         rect.setStyle(Style.STROKE);
 
     }
+
     int dp1 = Dips.dpToPx(1);
 
     @Override
@@ -181,7 +183,7 @@ public class EventDraw implements IEvent {
         textPaint.setTextSize(Dips.spToPx(16));
         textPaint.setColor(MagicHelper.getTextColor());
 
-        final String text = LibreraApp.context.getString(R.string.text_page) + " " + (page.index.viewIndex + 1);
+        final String text = MuPDFApplication.context.getString(R.string.text_page) + " " + (page.index.viewIndex + 1);
         canvas.drawText(text, fixedPageBounds.centerX(), fixedPageBounds.centerY(), textPaint);
 
     }
