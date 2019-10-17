@@ -22,20 +22,20 @@ import org.ebookdroid.ui.viewer.viewers.PdfSurfaceView;
 import org.emdev.ui.AbstractActionActivity;
 import org.emdev.utils.LengthUtils;
 
-import br.com.tocalivros.R;
-import br.com.tocalivros.foobnix.android.utils.Dips;
-import br.com.tocalivros.foobnix.android.utils.LOG;
-import br.com.tocalivros.foobnix.pdf.info.Android6;
-import br.com.tocalivros.foobnix.pdf.info.ExtUtils;
-import br.com.tocalivros.foobnix.pdf.info.model.BookCSS;
-import br.com.tocalivros.foobnix.pdf.info.view.BrightnessHelper;
-import br.com.tocalivros.foobnix.pdf.info.widget.RecentUpates;
-import br.com.tocalivros.foobnix.pdf.info.wrapper.AppState;
-import br.com.tocalivros.foobnix.pdf.info.wrapper.DocumentController;
-import br.com.tocalivros.foobnix.sys.TempHolder;
-import br.com.tocalivros.foobnix.tts.TTSNotification;
-import br.com.tocalivros.foobnix.ui2.FileMetaCore;
-import br.com.tocalivros.foobnix.ui2.MyContextWrapper;
+import br.com.ebook.R;
+import br.com.ebook.foobnix.android.utils.Dips;
+import br.com.ebook.foobnix.android.utils.LOG;
+import br.com.ebook.foobnix.pdf.info.Android6;
+import br.com.ebook.foobnix.pdf.info.ExtUtils;
+import br.com.ebook.foobnix.pdf.info.model.BookCSS;
+import br.com.ebook.foobnix.pdf.info.view.BrightnessHelper;
+import br.com.ebook.foobnix.pdf.info.widget.RecentUpates;
+import br.com.ebook.foobnix.pdf.info.wrapper.AppState;
+import br.com.ebook.foobnix.pdf.info.wrapper.DocumentController;
+import br.com.ebook.foobnix.sys.TempHolder;
+import br.com.ebook.foobnix.tts.TTSNotification;
+import br.com.ebook.foobnix.ui2.FileMetaCore;
+import br.com.ebook.foobnix.ui2.MyContextWrapper;
 
 public class VerticalViewActivity extends AbstractActionActivity<VerticalViewActivity, ViewerActivityController> {
     public static final String PERCENT_EXTRA = "percent";

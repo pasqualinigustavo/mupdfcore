@@ -2,7 +2,7 @@ package org.ebookdroid.common.settings;
 
 import org.ebookdroid.common.settings.types.ToastPosition;
 
-import br.com.tocalivros.foobnix.android.utils.Dips;
+import br.com.ebook.foobnix.android.utils.Dips;
 
 public class AppSettings {
 

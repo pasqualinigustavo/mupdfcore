@@ -11,7 +11,7 @@ import android.content.Context;
 
 import org.emdev.ui.actions.IActionController;
 
-import br.com.tocalivros.foobnix.sys.VerticalModeController;
+import br.com.ebook.foobnix.sys.VerticalModeController;
 
 public interface IActivityController extends IActionController<VerticalViewActivity> {
 

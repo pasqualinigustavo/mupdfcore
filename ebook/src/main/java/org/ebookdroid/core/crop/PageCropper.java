@@ -1,8 +1,8 @@
 package org.ebookdroid.core.crop;
 
-import br.com.tocalivros.foobnix.android.utils.Dips;
-import br.com.tocalivros.foobnix.android.utils.LOG;
-import br.com.tocalivros.foobnix.pdf.info.wrapper.MagicHelper;
+import br.com.ebook.foobnix.android.utils.Dips;
+import br.com.ebook.foobnix.android.utils.LOG;
+import br.com.ebook.foobnix.pdf.info.wrapper.MagicHelper;
 
 import android.graphics.Bitmap;
 import android.graphics.Color;

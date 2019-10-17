@@ -38,21 +38,21 @@ import java.io.File;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 
-import br.com.tocalivros.R;
-import br.com.tocalivros.foobnix.android.utils.LOG;
-import br.com.tocalivros.foobnix.android.utils.ResultResponse;
-import br.com.tocalivros.foobnix.android.utils.Safe;
-import br.com.tocalivros.foobnix.android.utils.TxtUtils;
-import br.com.tocalivros.foobnix.pdf.info.ExtUtils;
-import br.com.tocalivros.foobnix.pdf.info.model.OutlineLinkWrapper;
-import br.com.tocalivros.foobnix.pdf.info.wrapper.AppState;
-import br.com.tocalivros.foobnix.pdf.info.wrapper.DocumentWrapperUI;
-import br.com.tocalivros.foobnix.pdf.search.activity.HorizontalModeController;
-import br.com.tocalivros.foobnix.sys.TempHolder;
-import br.com.tocalivros.foobnix.sys.VerticalModeController;
-import br.com.tocalivros.foobnix.tts.TTSEngine;
-import br.com.tocalivros.foobnix.tts.TTSNotification;
-import br.com.tocalivros.foobnix.ui2.AppDB;
+import br.com.ebook.R;
+import br.com.ebook.foobnix.android.utils.LOG;
+import br.com.ebook.foobnix.android.utils.ResultResponse;
+import br.com.ebook.foobnix.android.utils.Safe;
+import br.com.ebook.foobnix.android.utils.TxtUtils;
+import br.com.ebook.foobnix.pdf.info.ExtUtils;
+import br.com.ebook.foobnix.pdf.info.model.OutlineLinkWrapper;
+import br.com.ebook.foobnix.pdf.info.wrapper.AppState;
+import br.com.ebook.foobnix.pdf.info.wrapper.DocumentWrapperUI;
+import br.com.ebook.foobnix.pdf.search.activity.HorizontalModeController;
+import br.com.ebook.foobnix.sys.TempHolder;
+import br.com.ebook.foobnix.sys.VerticalModeController;
+import br.com.ebook.foobnix.tts.TTSEngine;
+import br.com.ebook.foobnix.tts.TTSNotification;
+import br.com.ebook.foobnix.ui2.AppDB;
 
 public class ViewerActivityController extends ActionController<VerticalViewActivity> implements IActivityController, DecodingProgressListener, CurrentPageListener, IBookSettingsChangeListener {
 

@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-import br.com.tocalivros.foobnix.sys.TempHolder;
+import br.com.ebook.foobnix.sys.TempHolder;
 
 import android.graphics.Bitmap;
 

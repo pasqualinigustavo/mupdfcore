@@ -5,7 +5,7 @@ import java.util.List;
 import org.ebookdroid.common.bitmaps.BitmapRef;
 import org.ebookdroid.droids.mupdf.codec.TextWord;
 
-import br.com.tocalivros.foobnix.pdf.info.model.AnnotationType;
+import br.com.ebook.foobnix.pdf.info.model.AnnotationType;
 
 import android.graphics.Bitmap;
 import android.graphics.PointF;

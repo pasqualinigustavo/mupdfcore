@@ -16,8 +16,8 @@ import org.ebookdroid.ui.viewer.IActivityController;
 import org.emdev.utils.MathUtils;
 import org.emdev.utils.MatrixUtils;
 
-import br.com.tocalivros.foobnix.android.utils.TxtUtils;
-import br.com.tocalivros.foobnix.pdf.info.wrapper.AppState;
+import br.com.ebook.foobnix.android.utils.TxtUtils;
+import br.com.ebook.foobnix.pdf.info.wrapper.AppState;
 
 import android.graphics.Matrix;
 import android.graphics.RectF;

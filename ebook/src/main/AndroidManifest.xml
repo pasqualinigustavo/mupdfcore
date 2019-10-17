@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.com.tocalivros">
+    package="br.com.ebook">
 
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -9,14 +9,14 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
-        android:name=".application.eBookApplication"
+        android:name="br.com.ebook.application.eBookApplication"
         android:allowBackup="true"
         android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
         <activity
-            android:name="br.com.tocalivros.foobnix.pdf.search.activity.HorizontalViewActivity"
+            android:name="br.com.ebook.foobnix.pdf.search.activity.HorizontalViewActivity"
             android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
             android:exported="true"
             android:launchMode="singleTask"
@@ -100,7 +100,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="br.com.tocalivros.foobnix.tts.TTSActivity"
+            android:name="br.com.ebook.foobnix.tts.TTSActivity"
             android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
             android:launchMode="singleTask">
             <intent-filter>
@@ -137,7 +137,7 @@
         </receiver>
 
         <service
-            android:name="br.com.tocalivros.foobnix.tts.TTSService"
+            android:name="br.com.ebook.foobnix.tts.TTSService"
             android:enabled="true"
             android:exported="false">
             <intent-filter>
@@ -150,7 +150,7 @@
             android:required="false" />
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="br.com.tocalivros.mupdfsample.provider"
+            android:authorities="br.com.ebook.mupdfsample.provider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data

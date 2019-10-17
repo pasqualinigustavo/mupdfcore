@@ -19,10 +19,10 @@ import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
 import java.nio.channels.WritableByteChannel;
 
-import br.com.tocalivros.application.eBookApplication;
-import br.com.tocalivros.foobnix.android.utils.LOG;
-import br.com.tocalivros.foobnix.pdf.info.ExtUtils;
-import br.com.tocalivros.foobnix.pdf.info.wrapper.AppState;
+import br.com.ebook.application.eBookApplication;
+import br.com.ebook.foobnix.android.utils.LOG;
+import br.com.ebook.foobnix.pdf.info.ExtUtils;
+import br.com.ebook.foobnix.pdf.info.wrapper.AppState;
 
 public class CacheManager {
     private static Context s_context;

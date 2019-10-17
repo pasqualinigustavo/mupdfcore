@@ -19,7 +19,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import br.com.tocalivros.R;
+import br.com.ebook.R;
 
 public class ActionEx implements Runnable, View.OnClickListener, View.OnLongClickListener,
         AdapterView.OnItemClickListener, DialogInterface.OnClickListener, OnMultiChoiceClickListener,

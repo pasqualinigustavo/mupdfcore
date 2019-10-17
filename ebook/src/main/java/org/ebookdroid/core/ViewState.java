@@ -9,7 +9,7 @@ import org.ebookdroid.core.models.DocumentModel;
 import org.ebookdroid.ui.viewer.IView;
 import org.ebookdroid.ui.viewer.IViewController;
 
-import br.com.tocalivros.foobnix.pdf.info.wrapper.AppState;
+import br.com.ebook.foobnix.pdf.info.wrapper.AppState;
 
 import android.graphics.PointF;
 import android.graphics.RectF;

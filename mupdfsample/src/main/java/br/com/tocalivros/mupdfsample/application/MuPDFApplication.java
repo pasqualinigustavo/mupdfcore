@@ -1,6 +1,6 @@
 package br.com.tocalivros.mupdfsample.application;
 
-import br.com.tocalivros.application.eBookApplication;
+import br.com.ebook.application.eBookApplication;
 
 public class MuPDFApplication extends eBookApplication {
 

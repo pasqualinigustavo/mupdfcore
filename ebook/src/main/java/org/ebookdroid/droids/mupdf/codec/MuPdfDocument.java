@@ -8,12 +8,12 @@ import org.ebookdroid.core.codec.CodecPage;
 import org.ebookdroid.core.codec.CodecPageInfo;
 import org.ebookdroid.core.codec.OutlineLink;
 
-import br.com.tocalivros.foobnix.android.utils.Dips;
-import br.com.tocalivros.foobnix.android.utils.LOG;
-import br.com.tocalivros.foobnix.pdf.info.ExtUtils;
-import br.com.tocalivros.foobnix.pdf.info.model.BookCSS;
-import br.com.tocalivros.foobnix.pdf.info.wrapper.AppState;
-import br.com.tocalivros.foobnix.sys.TempHolder;
+import br.com.ebook.foobnix.android.utils.Dips;
+import br.com.ebook.foobnix.android.utils.LOG;
+import br.com.ebook.foobnix.pdf.info.ExtUtils;
+import br.com.ebook.foobnix.pdf.info.model.BookCSS;
+import br.com.ebook.foobnix.pdf.info.wrapper.AppState;
+import br.com.ebook.foobnix.sys.TempHolder;
 
 import android.graphics.RectF;
 

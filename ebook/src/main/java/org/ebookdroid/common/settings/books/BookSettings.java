@@ -7,9 +7,9 @@ import org.ebookdroid.core.events.CurrentPageListener;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import br.com.tocalivros.foobnix.pdf.info.ExtUtils;
-import br.com.tocalivros.foobnix.pdf.info.wrapper.AppState;
-import br.com.tocalivros.foobnix.sys.TempHolder;
+import br.com.ebook.foobnix.pdf.info.ExtUtils;
+import br.com.ebook.foobnix.pdf.info.wrapper.AppState;
+import br.com.ebook.foobnix.sys.TempHolder;
 
 public class BookSettings implements CurrentPageListener {
 

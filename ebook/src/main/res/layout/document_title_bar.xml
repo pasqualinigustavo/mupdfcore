@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-     <br.com.tocalivros.foobnix.pdf.info.view.ProgressDraw
+     <br.com.ebook.foobnix.pdf.info.view.ProgressDraw
             android:id="@+id/progressDraw"
             android:layout_width="match_parent"
             android:layout_height="@dimen/progress" />

@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.ebookdroid.core.codec.PageLink;
 
-import br.com.tocalivros.foobnix.android.utils.LOG;
+import br.com.ebook.foobnix.android.utils.LOG;
 
 import android.graphics.RectF;
 

@@ -16,7 +16,7 @@ import org.ebookdroid.core.models.DecodingProgressModel;
 import org.ebookdroid.ui.viewer.IViewController;
 import org.emdev.utils.MatrixUtils;
 
-import br.com.tocalivros.foobnix.pdf.info.wrapper.AppState;
+import br.com.ebook.foobnix.pdf.info.wrapper.AppState;
 
 import android.graphics.Canvas;
 import android.graphics.Matrix;

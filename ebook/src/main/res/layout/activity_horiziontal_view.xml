@@ -7,7 +7,7 @@
     android:focusableInTouchMode="true"
     android:orientation="vertical" >
 
-    <br.com.tocalivros.foobnix.pdf.search.view.VerticalViewPager
+    <br.com.ebook.foobnix.pdf.search.view.VerticalViewPager
         android:id="@+id/pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -115,7 +115,7 @@
                 android:src="@drawable/glyphicons_187_move"
                 android:visibility="visible" />
 
-            <br.com.tocalivros.foobnix.pdf.info.view.UnderlineImageView
+            <br.com.ebook.foobnix.pdf.info.view.UnderlineImageView
                 android:id="@+id/onBC"
                 style="@style/buttonWhite"
                 android:layout_width="@dimen/wh_button"
@@ -125,7 +125,7 @@
                 android:src="@drawable/glyphicons_190_brightness_my"
                 android:visibility="visible" />
 
-            <br.com.tocalivros.foobnix.pdf.info.view.UnderlineImageView
+            <br.com.ebook.foobnix.pdf.info.view.UnderlineImageView
                 android:id="@+id/onCrop"
                 style="@style/buttonWhite"
                 android:layout_width="@dimen/wh_button"
@@ -227,7 +227,7 @@
                 android:textSize="9sp" />
         </LinearLayout>
 
-        <br.com.tocalivros.foobnix.pdf.info.view.ProgressDraw
+        <br.com.ebook.foobnix.pdf.info.view.ProgressDraw
             android:id="@+id/progressDraw"
             android:layout_width="match_parent"
             android:layout_height="@dimen/progress" />

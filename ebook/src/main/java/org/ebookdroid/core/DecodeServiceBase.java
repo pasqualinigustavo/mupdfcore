@@ -30,15 +30,15 @@ import org.emdev.utils.CompareUtils;
 import org.emdev.utils.LengthUtils;
 import org.emdev.utils.MathUtils;
 
-import br.com.tocalivros.foobnix.android.utils.LOG;
-import br.com.tocalivros.foobnix.android.utils.ResultResponse;
-import br.com.tocalivros.foobnix.android.utils.Safe;
-import br.com.tocalivros.foobnix.android.utils.TxtUtils;
-import br.com.tocalivros.foobnix.pdf.info.model.AnnotationType;
-import br.com.tocalivros.foobnix.pdf.info.wrapper.MagicHelper;
-import br.com.tocalivros.foobnix.sys.Colors;
-import br.com.tocalivros.foobnix.sys.ImageExtractor;
-import br.com.tocalivros.foobnix.sys.TempHolder;
+import br.com.ebook.foobnix.android.utils.LOG;
+import br.com.ebook.foobnix.android.utils.ResultResponse;
+import br.com.ebook.foobnix.android.utils.Safe;
+import br.com.ebook.foobnix.android.utils.TxtUtils;
+import br.com.ebook.foobnix.pdf.info.model.AnnotationType;
+import br.com.ebook.foobnix.pdf.info.wrapper.MagicHelper;
+import br.com.ebook.foobnix.sys.Colors;
+import br.com.ebook.foobnix.sys.ImageExtractor;
+import br.com.ebook.foobnix.sys.TempHolder;
 
 import android.graphics.Bitmap.Config;
 import android.graphics.PixelFormat;

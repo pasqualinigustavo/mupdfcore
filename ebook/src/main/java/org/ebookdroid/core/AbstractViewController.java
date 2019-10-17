@@ -29,13 +29,13 @@ import org.emdev.ui.actions.params.Constant;
 import org.emdev.ui.progress.IProgressIndicator;
 import org.emdev.utils.LengthUtils;
 
-import br.com.tocalivros.foobnix.android.utils.LOG;
-import br.com.tocalivros.foobnix.android.utils.TxtUtils;
-import br.com.tocalivros.R;
-import br.com.tocalivros.foobnix.pdf.info.view.AlertDialogs;
-import br.com.tocalivros.foobnix.pdf.info.wrapper.AppState;
-import br.com.tocalivros.foobnix.sys.AdvGuestureDetector;
-import br.com.tocalivros.foobnix.sys.TempHolder;
+import br.com.ebook.foobnix.android.utils.LOG;
+import br.com.ebook.foobnix.android.utils.TxtUtils;
+import br.com.ebook.R;
+import br.com.ebook.foobnix.pdf.info.view.AlertDialogs;
+import br.com.ebook.foobnix.pdf.info.wrapper.AppState;
+import br.com.ebook.foobnix.sys.AdvGuestureDetector;
+import br.com.ebook.foobnix.sys.TempHolder;
 
 import android.graphics.PointF;
 import android.graphics.Rect;

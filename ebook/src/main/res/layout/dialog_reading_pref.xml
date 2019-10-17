@@ -42,14 +42,14 @@
                 android:text="/sdcard/xxxx" />
         </LinearLayout>
 
-        <br.com.tocalivros.foobnix.pdf.info.view.CustomSeek
+        <br.com.ebook.foobnix.pdf.info.view.CustomSeek
             android:id="@+id/fontWeight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dip"
             android:visibility="gone"
             myseek:text="Weight" >
-        </br.com.tocalivros.foobnix.pdf.info.view.CustomSeek>
+        </br.com.ebook.foobnix.pdf.info.view.CustomSeek>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -146,29 +146,29 @@
                 android:text="Russian" />
         </LinearLayout>
 
-        <br.com.tocalivros.foobnix.pdf.info.view.CustomSeek
+        <br.com.ebook.foobnix.pdf.info.view.CustomSeek
             android:id="@+id/fontInterval"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dip"
             myseek:text="@string/interval" >
-        </br.com.tocalivros.foobnix.pdf.info.view.CustomSeek>
+        </br.com.ebook.foobnix.pdf.info.view.CustomSeek>
 
-        <br.com.tocalivros.foobnix.pdf.info.view.CustomSeek
+        <br.com.ebook.foobnix.pdf.info.view.CustomSeek
             android:id="@+id/fontParagraph"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dip"
             myseek:text="@string/paragraph" >
-        </br.com.tocalivros.foobnix.pdf.info.view.CustomSeek>
+        </br.com.ebook.foobnix.pdf.info.view.CustomSeek>
 
-        <br.com.tocalivros.foobnix.pdf.info.view.CustomSeek
+        <br.com.ebook.foobnix.pdf.info.view.CustomSeek
             android:id="@+id/emptyLine"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dip"
             myseek:text="@string/empty_line" >
-        </br.com.tocalivros.foobnix.pdf.info.view.CustomSeek>
+        </br.com.ebook.foobnix.pdf.info.view.CustomSeek>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -193,46 +193,46 @@
                 android:textStyle="bold" />
         </LinearLayout>
 
-        <br.com.tocalivros.foobnix.pdf.info.view.CustomSeek
+        <br.com.ebook.foobnix.pdf.info.view.CustomSeek
             android:id="@+id/marginTop"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dip"
             myseek:text="@string/top" >
-        </br.com.tocalivros.foobnix.pdf.info.view.CustomSeek>
+        </br.com.ebook.foobnix.pdf.info.view.CustomSeek>
 
-        <br.com.tocalivros.foobnix.pdf.info.view.CustomSeek
+        <br.com.ebook.foobnix.pdf.info.view.CustomSeek
             android:id="@+id/marginBottom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dip"
             myseek:text="@string/bottom" >
-        </br.com.tocalivros.foobnix.pdf.info.view.CustomSeek>
+        </br.com.ebook.foobnix.pdf.info.view.CustomSeek>
 
-        <br.com.tocalivros.foobnix.pdf.info.view.CustomSeek
+        <br.com.ebook.foobnix.pdf.info.view.CustomSeek
             android:id="@+id/marginLeft"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dip"
             myseek:text="@string/left" >
-        </br.com.tocalivros.foobnix.pdf.info.view.CustomSeek>
+        </br.com.ebook.foobnix.pdf.info.view.CustomSeek>
 
-        <br.com.tocalivros.foobnix.pdf.info.view.CustomSeek
+        <br.com.ebook.foobnix.pdf.info.view.CustomSeek
             android:id="@+id/marginRight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dip"
             myseek:text="@string/right" >
-        </br.com.tocalivros.foobnix.pdf.info.view.CustomSeek>
+        </br.com.ebook.foobnix.pdf.info.view.CustomSeek>
 
-        <br.com.tocalivros.foobnix.pdf.info.view.CustomColorView
+        <br.com.ebook.foobnix.pdf.info.view.CustomColorView
             android:id="@+id/linkColorDay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dip"
             myseek:text="@string/links_color_day" />
 
-        <br.com.tocalivros.foobnix.pdf.info.view.CustomColorView
+        <br.com.ebook.foobnix.pdf.info.view.CustomColorView
             android:id="@+id/linkColorNight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

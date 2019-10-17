@@ -230,12 +230,12 @@
                     android:text="@string/font_size"
                     android:textStyle="bold" />
 
-                <br.com.tocalivros.foobnix.pdf.info.view.CustomSeek
+                <br.com.ebook.foobnix.pdf.info.view.CustomSeek
                     android:id="@+id/fontSizeSp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1" >
-                </br.com.tocalivros.foobnix.pdf.info.view.CustomSeek>
+                </br.com.ebook.foobnix.pdf.info.view.CustomSeek>
             </LinearLayout>
         </LinearLayout>
 
@@ -337,12 +337,12 @@
                         android:text="@string/automatic" />
                 </LinearLayout>
 
-                <br.com.tocalivros.foobnix.pdf.info.view.CustomSeek
+                <br.com.ebook.foobnix.pdf.info.view.CustomSeek
                     android:id="@+id/customBrightness"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1" >
-                </br.com.tocalivros.foobnix.pdf.info.view.CustomSeek>
+                </br.com.ebook.foobnix.pdf.info.view.CustomSeek>
             </LinearLayout>
         </LinearLayout>
 

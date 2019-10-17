@@ -8,12 +8,12 @@ import org.ebookdroid.droids.mupdf.codec.exceptions.MuPdfPasswordException;
 import org.ebookdroid.droids.mupdf.codec.exceptions.MuPdfPasswordRequiredException;
 import org.ebookdroid.ui.viewer.VerticalViewActivity;
 
-import br.com.tocalivros.foobnix.android.utils.LOG;
-import br.com.tocalivros.foobnix.ext.CacheZipUtils;
-import br.com.tocalivros.foobnix.ext.CacheZipUtils.CacheDir;
-import br.com.tocalivros.foobnix.pdf.info.ExtUtils;
-import br.com.tocalivros.foobnix.pdf.info.model.BookCSS;
-import br.com.tocalivros.foobnix.sys.TempHolder;
+import br.com.ebook.foobnix.android.utils.LOG;
+import br.com.ebook.foobnix.ext.CacheZipUtils;
+import br.com.ebook.foobnix.ext.CacheZipUtils.CacheDir;
+import br.com.ebook.foobnix.pdf.info.ExtUtils;
+import br.com.ebook.foobnix.pdf.info.model.BookCSS;
+import br.com.ebook.foobnix.sys.TempHolder;
 
 import android.graphics.Bitmap;
 

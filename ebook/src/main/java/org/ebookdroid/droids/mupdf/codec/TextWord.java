@@ -1,7 +1,7 @@
 package org.ebookdroid.droids.mupdf.codec;
 
-import br.com.tocalivros.fitz.Rect;
-import br.com.tocalivros.foobnix.android.utils.TxtUtils;
+import br.com.ebook.fitz.Rect;
+import br.com.ebook.foobnix.android.utils.TxtUtils;
 
 import android.graphics.RectF;
 

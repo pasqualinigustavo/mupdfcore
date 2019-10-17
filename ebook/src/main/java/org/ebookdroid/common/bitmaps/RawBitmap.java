@@ -2,10 +2,10 @@ package org.ebookdroid.common.bitmaps;
 
 import org.ebookdroid.BookType;
 
-import br.com.tocalivros.foobnix.android.utils.LOG;
-import br.com.tocalivros.foobnix.pdf.info.wrapper.AppState;
-import br.com.tocalivros.foobnix.pdf.info.wrapper.MagicHelper;
-import br.com.tocalivros.foobnix.sys.TempHolder;
+import br.com.ebook.foobnix.android.utils.LOG;
+import br.com.ebook.foobnix.pdf.info.wrapper.AppState;
+import br.com.ebook.foobnix.pdf.info.wrapper.MagicHelper;
+import br.com.ebook.foobnix.sys.TempHolder;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;

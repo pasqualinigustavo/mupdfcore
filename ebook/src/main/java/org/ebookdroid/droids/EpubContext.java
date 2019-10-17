@@ -7,12 +7,12 @@ import org.ebookdroid.core.codec.CodecDocument;
 import org.ebookdroid.droids.mupdf.codec.MuPdfDocument;
 import org.ebookdroid.droids.mupdf.codec.PdfContext;
 
-import br.com.tocalivros.foobnix.android.utils.LOG;
-import br.com.tocalivros.foobnix.ext.CacheZipUtils;
-import br.com.tocalivros.foobnix.ext.EpubExtractor;
-import br.com.tocalivros.foobnix.pdf.info.JsonHelper;
-import br.com.tocalivros.foobnix.pdf.info.model.BookCSS;
-import br.com.tocalivros.foobnix.sys.TempHolder;
+import br.com.ebook.foobnix.android.utils.LOG;
+import br.com.ebook.foobnix.ext.CacheZipUtils;
+import br.com.ebook.foobnix.ext.EpubExtractor;
+import br.com.ebook.foobnix.pdf.info.JsonHelper;
+import br.com.ebook.foobnix.pdf.info.model.BookCSS;
+import br.com.ebook.foobnix.sys.TempHolder;
 
 public class EpubContext extends PdfContext {
 

@@ -69,7 +69,7 @@
             android:contentDescription="zoom out"
             android:src="@drawable/glyphicons_191_circle_plus" />
 
-        <br.com.tocalivros.foobnix.pdf.info.view.UnderlineImageView
+        <br.com.ebook.foobnix.pdf.info.view.UnderlineImageView
             android:id="@+id/onBC"
             style="@style/buttonWhite"
             android:layout_width="@dimen/wh_button"
@@ -85,7 +85,7 @@
             android:layout_weight="0"
             android:src="@drawable/glyphicons_232_sun" />
 
-        <br.com.tocalivros.foobnix.pdf.info.view.UnderlineImageView
+        <br.com.ebook.foobnix.pdf.info.view.UnderlineImageView
             android:id="@+id/crop"
             style="@style/buttonWhite"
             android:layout_width="@dimen/wh_button"
@@ -93,7 +93,7 @@
             android:layout_weight="0"
             android:src="@drawable/glyphicons_94_crop" />
 
-        <br.com.tocalivros.foobnix.pdf.info.view.UnderlineImageView
+        <br.com.ebook.foobnix.pdf.info.view.UnderlineImageView
             android:id="@+id/cut"
             style="@style/buttonWhite"
             android:layout_width="@dimen/wh_button"

@@ -15,8 +15,8 @@ import org.ebookdroid.ui.viewer.VerticalViewActivity;
 import org.emdev.ui.actions.ActionController;
 import org.emdev.ui.actions.IActionController;
 
-import br.com.tocalivros.application.eBookApplication;
-import br.com.tocalivros.foobnix.sys.VerticalModeController;
+import br.com.ebook.application.eBookApplication;
+import br.com.ebook.foobnix.sys.VerticalModeController;
 
 public class ActivityControllerStub extends ActionController<VerticalViewActivity> implements IActivityController {
 

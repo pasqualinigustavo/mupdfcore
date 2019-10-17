@@ -19,7 +19,7 @@ import org.ebookdroid.droids.ZipContext;
 import org.ebookdroid.droids.djvu.codec.DjvuContext;
 import org.ebookdroid.droids.mupdf.codec.PdfContext;
 
-import br.com.tocalivros.foobnix.android.utils.LOG;
+import br.com.ebook.foobnix.android.utils.LOG;
 
 import android.content.Intent;
 

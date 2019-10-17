@@ -82,13 +82,13 @@
         android:layout_weight="0"
         android:background="#ff0000" />
 
-    <br.com.tocalivros.foobnix.pdf.info.view.CustomSeek
+    <br.com.ebook.foobnix.pdf.info.view.CustomSeek
         android:id="@+id/bgTransparency"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dip"
         myseek:text="@string/transparency" >
-    </br.com.tocalivros.foobnix.pdf.info.view.CustomSeek>
+    </br.com.ebook.foobnix.pdf.info.view.CustomSeek>
 
     <LinearLayout
         android:layout_width="match_parent"

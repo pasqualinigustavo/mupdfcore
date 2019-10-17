@@ -2,7 +2,7 @@ package org.ebookdroid.droids.djvu.codec;
 
 import org.ebookdroid.core.codec.AbstractCodecContext;
 
-import br.com.tocalivros.foobnix.sys.TempHolder;
+import br.com.ebook.foobnix.sys.TempHolder;
 
 public class DjvuContext extends AbstractCodecContext {
 

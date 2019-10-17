@@ -84,7 +84,7 @@
                 android:src="@drawable/glyphicons_115_list1" />
 
             
-             <br.com.tocalivros.foobnix.pdf.search.view.HeightImageView
+             <br.com.ebook.foobnix.pdf.search.view.HeightImageView
                 android:id="@+id/onModeChange"
                 style="@style/buttonWhite"
                 android:layout_width="wrap_content"

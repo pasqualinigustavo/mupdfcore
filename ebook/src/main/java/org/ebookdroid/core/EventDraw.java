@@ -15,11 +15,11 @@ import org.emdev.utils.LengthUtils;
 
 import java.util.Queue;
 
-import br.com.tocalivros.R;
-import br.com.tocalivros.application.eBookApplication;
-import br.com.tocalivros.foobnix.android.utils.Dips;
-import br.com.tocalivros.foobnix.pdf.info.wrapper.AppState;
-import br.com.tocalivros.foobnix.pdf.info.wrapper.MagicHelper;
+import br.com.ebook.R;
+import br.com.ebook.application.eBookApplication;
+import br.com.ebook.foobnix.android.utils.Dips;
+import br.com.ebook.foobnix.pdf.info.wrapper.AppState;
+import br.com.ebook.foobnix.pdf.info.wrapper.MagicHelper;
 
 public class EventDraw implements IEvent {
 

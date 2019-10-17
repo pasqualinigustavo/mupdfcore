@@ -8,8 +8,8 @@ import org.ebookdroid.common.settings.listeners.IBookSettingsChangeListener;
 import org.ebookdroid.core.PageIndex;
 import org.emdev.utils.listeners.ListenerProxy;
 
-import br.com.tocalivros.foobnix.android.utils.LOG;
-import br.com.tocalivros.foobnix.pdf.info.wrapper.AppState;
+import br.com.ebook.foobnix.android.utils.LOG;
+import br.com.ebook.foobnix.pdf.info.wrapper.AppState;
 
 import android.content.Context;
 

@@ -8,8 +8,8 @@ import org.ebookdroid.core.codec.OutlineLink;
 import org.ebookdroid.core.codec.PageTextBox;
 import org.emdev.utils.LengthUtils;
 
-import br.com.tocalivros.foobnix.android.utils.LOG;
-import br.com.tocalivros.foobnix.sys.TempHolder;
+import br.com.ebook.foobnix.android.utils.LOG;
+import br.com.ebook.foobnix.sys.TempHolder;
 
 import android.graphics.RectF;
 

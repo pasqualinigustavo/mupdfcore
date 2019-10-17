@@ -10,8 +10,8 @@ import org.ebookdroid.core.codec.OutlineLink;
 import org.ebookdroid.core.codec.PageLink;
 import org.ebookdroid.droids.mupdf.codec.TextWord;
 
-import br.com.tocalivros.foobnix.android.utils.ResultResponse;
-import br.com.tocalivros.foobnix.pdf.info.model.AnnotationType;
+import br.com.ebook.foobnix.android.utils.ResultResponse;
+import br.com.ebook.foobnix.pdf.info.model.AnnotationType;
 
 import android.graphics.Bitmap.Config;
 import android.graphics.PixelFormat;
@@ -122,7 +122,7 @@ public class DecodeServiceStub implements DecodeService {
 	 * @see org.ebookdroid.core.DecodeService#getOutline()
 	 */
 	@Override
-	public void getOutline(br.com.tocalivros.foobnix.android.utils.ResultResponse<java.util.List<OutlineLink>> response) {
+	public void getOutline(ResultResponse<List<OutlineLink>> response) {
 
 	};
 

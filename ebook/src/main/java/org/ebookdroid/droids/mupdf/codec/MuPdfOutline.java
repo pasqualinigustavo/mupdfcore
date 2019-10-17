@@ -5,10 +5,10 @@ import java.util.List;
 
 import org.ebookdroid.core.codec.OutlineLink;
 
-import br.com.tocalivros.foobnix.android.utils.LOG;
-import br.com.tocalivros.foobnix.ext.Fb2Extractor;
-import br.com.tocalivros.foobnix.pdf.info.wrapper.AppState;
-import br.com.tocalivros.foobnix.sys.TempHolder;
+import br.com.ebook.foobnix.android.utils.LOG;
+import br.com.ebook.foobnix.ext.Fb2Extractor;
+import br.com.ebook.foobnix.pdf.info.wrapper.AppState;
+import br.com.ebook.foobnix.sys.TempHolder;
 
 public class MuPdfOutline {
 

@@ -4,7 +4,7 @@
     android:gravity="center_vertical"
     android:layout_height="@dimen/speed_size" >
 
-    <br.com.tocalivros.foobnix.pdf.search.view.SpeedBgView
+    <br.com.ebook.foobnix.pdf.search.view.SpeedBgView
         android:id="@+id/speedBgView1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -1,6 +1,6 @@
 package org.emdev.ui.uimanager;
 
-import br.com.tocalivros.foobnix.sys.VerticalModeController;
+import br.com.ebook.foobnix.sys.VerticalModeController;
 
 import android.app.Activity;
 import android.view.View;

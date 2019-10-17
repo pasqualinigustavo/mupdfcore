@@ -1,8 +1,8 @@
 package org.emdev.ui.tasks;
 
-import br.com.tocalivros.foobnix.android.utils.LOG;
-import br.com.tocalivros.foobnix.pdf.CopyAsyncTask;
-import br.com.tocalivros.foobnix.pdf.info.view.Dialogs;
+import br.com.ebook.foobnix.android.utils.LOG;
+import br.com.ebook.foobnix.pdf.CopyAsyncTask;
+import br.com.ebook.foobnix.pdf.info.view.Dialogs;
 
 import android.app.AlertDialog;
 import android.content.Context;

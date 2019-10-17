@@ -15,7 +15,7 @@ import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.atomic.AtomicLong;
 
-import br.com.tocalivros.foobnix.android.utils.LOG;
+import br.com.ebook.foobnix.android.utils.LOG;
 
 public class BitmapManager {
 
