@@ -1,0 +1,119 @@
+//apply plugin: 'com.android.library'
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+ext {
+    db = 8
+}
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+
+}
+
+repositories {
+    jcenter()
+    google()
+    mavenCentral()
+    maven { url 'http://maven.ghostscript.com' }
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion '29.0.2'
+    defaultConfig {
+        applicationId "com.foobnix.pdf.reader"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+        buildConfigField "boolean", "IS_BETA", "false"
+        buildConfigField "boolean", "IS_FDROID", "false"
+        buildConfigField "boolean", "LOG", "true"
+        buildConfigField "int", "MUPDF_VERSION", "111"
+    }
+
+    configurations {
+        all {
+            exclude module: 'httpclient'
+            exclude module: 'commons-logging'
+        }
+    }
+
+    lintOptions {
+        abortOnError true
+        ignoreWarnings true
+
+    }
+    testOptions {
+        unitTests.includeAndroidResources = true
+        unitTests.returnDefaultValues = true
+
+    }
+
+    signingConfigs {
+        release {
+
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    api 'com.artifex.mupdf:viewer:1.15.+'
+
+    implementation 'com.github.axet:lame:1.0.5'
+
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation('org.greenrobot:greendao:3.2.2') {
+        exclude group: 'org.greenrobot.greendao.rx'
+    }
+    implementation 'org.greenrobot:greendao-api:3.2.2'
+    implementation 'org.jsoup:jsoup:1.12.1'
+    implementation 'com.googlecode.juniversalchardet:juniversalchardet:1.0.3'
+
+    implementation 'com.github.joniles:rtfparserkit:1.13.0'
+    implementation 'org.zwobble.mammoth:mammoth:1.4.0'
+    implementation 'javax.xml.stream:stax-api:1.0-2'
+    implementation "androidx.core:core-ktx:+"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
