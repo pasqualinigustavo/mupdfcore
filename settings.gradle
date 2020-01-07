@@ -1,1 +1,1 @@
-include ':app', ':Builder', ':mupdfSample'
+include ':ebook', ':Builder', ':mupdfSample'
