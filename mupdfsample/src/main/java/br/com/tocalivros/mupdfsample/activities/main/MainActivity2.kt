@@ -3,7 +3,7 @@ package br.com.tocalivros.mupdfsample.activities.main
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import br.com.tocalivros.mupdfsample.BuildConfig
-import com.foobnix.pdf.info.ExtUtils
+//import com.foobnix.pdf.info.ExtUtils
 import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
@@ -19,7 +19,7 @@ class MainActivity2 : AppCompatActivity() {
 
         copyDBFromAssetsFolder()
         val f = File("$DATABASE_PATH/$DATABASE_NAME")
-        ExtUtils.showDocument(this, f)
+        //ExtUtils.showDocument(this, f)
     }
 
     private fun copyDBFromAssetsFolder() {

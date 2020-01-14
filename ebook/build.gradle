@@ -1,5 +1,5 @@
-//apply plugin: 'com.android.library'
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
+//apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
 ext {
@@ -9,6 +9,7 @@ ext {
 buildscript {
     repositories {
         jcenter()
+        mavenLocal()
         mavenCentral()
     }
 
@@ -17,6 +18,7 @@ buildscript {
 repositories {
     jcenter()
     google()
+    mavenLocal()
     mavenCentral()
     maven { url 'http://maven.ghostscript.com' }
 }
@@ -25,7 +27,7 @@ android {
     compileSdkVersion 29
     buildToolsVersion '29.0.2'
     defaultConfig {
-        applicationId "com.foobnix.pdf.reader"
+        //applicationId "com.foobnix.pdf.reader"
         minSdkVersion 16
         targetSdkVersion 29
         versionCode 1
@@ -99,7 +101,7 @@ dependencies {
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
-    api 'com.artifex.mupdf:viewer:1.15.+'
+    api 'com.artifex.mupdf:viewer:1.16.1'
 
     implementation 'com.github.axet:lame:1.0.5'
 
